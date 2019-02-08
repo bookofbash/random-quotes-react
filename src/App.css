@@ -1,0 +1,69 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background-color: #121526; }
+
+#main {
+  padding: 10%;
+  background-color: #121526; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#quote-box {
+  height: auto;
+  width: 80%;
+  border: solid; }
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#author {
+  padding-left: 70%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  padding-bottom: 5%;
+  font-display: fallback; }
+
+#text {
+  margin: 5%;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3vw; }
+
+#tweet-quote {
+  background-color: red;
+  height: 60px;
+  width: 100px;
+  text-align: center;
+  vertical-align: center; }
+
+#new-quote {
+  background-color: aqua;
+  height: 60px;
+  width: 100px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+#new-quote:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid aqua;
+  border-bottom: 13px solid transparent; }
+
+.fa-twitter-square {
+  font-size: 5vw; }
+
+/*# sourceMappingURL=App.css.map */
