@@ -15,11 +15,6 @@ body {
   align-items: center;
   width: 100%; }
 
-#buttons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; }
-
 #quote-box {
   height: auto;
   width: 80%;
@@ -38,22 +33,25 @@ body {
   font-size: 3vw; }
 
 #tweet-quote {
-  height: 60px;
-  width: 100px;
+  height: 4vw;
+  min-height: 30px;
+  width: 10vw;
+  min-width: 80px;
   text-align: center;
-  vertical-align: center; }
+  vertical-align: center;
+  margin-top: 5%; }
 
 #new-quote {
-  background-color: aqua;
   height: 4vw;
+  min-height: 30px;
   width: 10vw;
-  position: relative;
+  min-width: 80px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-top: 5%; }
 
-.fa-twitter-square {
-  font-size: 5vw;
-  margin-top: 10%; }
+.fa-twitter {
+  font-size: 5vw; }
 
 /*# sourceMappingURL=App.css.map */

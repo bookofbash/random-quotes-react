@@ -1,7 +1,6 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #121526;
 $secondary-color:#eee;
-$repeat: 20;
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -20,12 +19,6 @@ $repeat: 20;
     justify-content: center;
     align-items: center;
     width: 100%; 
-}
-
-#buttons {
-    display:flex;
-    align-items: center;
-    justify-content:flex-end;
 }
 
 #quote-box {
@@ -49,23 +42,28 @@ $repeat: 20;
 }
 
 #tweet-quote{
-    height: 60px;
-    width: 100px;
+    height: 4vw;
+    min-height: 30px;
+    width: 10vw;
+    min-width: 80px;
     text-align: center;
     vertical-align: center;
+    margin-top: 5%;
+
 }
 
 #new-quote{
-    background-color: aqua;
     height: 4vw;
+    min-height: 30px;
     width: 10vw;
-    position: relative;
+    min-width: 80px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    margin-top: 5%;
+
 }
 
-.fa-twitter-square{
+.fa-twitter{
     font-size: 5vw;
-    margin-top: 10%;
 }
