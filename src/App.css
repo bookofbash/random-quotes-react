@@ -12,17 +12,18 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
 
 #quote-box {
   height: auto;
   width: 80%;
   border: solid; }
-
-#buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
 
 #author {
   padding-left: 70%;
@@ -37,7 +38,6 @@ body {
   font-size: 3vw; }
 
 #tweet-quote {
-  background-color: red;
   height: 60px;
   width: 100px;
   text-align: center;
@@ -45,25 +45,15 @@ body {
 
 #new-quote {
   background-color: aqua;
-  height: 60px;
-  width: 100px;
+  height: 4vw;
+  width: 10vw;
   position: relative;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px; }
 
-#new-quote:before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  top: 26px;
-  width: 0;
-  height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid aqua;
-  border-bottom: 13px solid transparent; }
-
 .fa-twitter-square {
-  font-size: 5vw; }
+  font-size: 5vw;
+  margin-top: 10%; }
 
 /*# sourceMappingURL=App.css.map */
