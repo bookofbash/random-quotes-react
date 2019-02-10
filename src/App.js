@@ -49,6 +49,7 @@ class Counter extends Component {
   render() {
     const { author, quote, isLoading, error } = this.state;
     var plainQuote = quote.replace(/(<([^>]+)>)/ig,"");
+    var plainAuthor = author.replace(/(<([^>]+)>)/ig,"");
 
     
     if (error) {
@@ -61,12 +62,12 @@ class Counter extends Component {
         <div className='container'>
           <div id="quote-box">
             <div id='text'>{renderHTML(plainQuote)}</div>
-            <div id='author'>-{author}</div>
+            <div id='author'>{renderHTML(plainAuthor)}</div>
           </div>
         </div>
         <div id='buttons'>
           <button id='new-quote' onClick={this.fetchData}>GENERATE</button>
-          <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ author}><i className="fab fa-twitter-square"></i></a>
+          <a id='tweet-quote'href={twitterURL+plainQuote+ " -"+ plainAuthor}><i className="fab fa-twitter-square"></i></a>
         </div>
       </div>
       )
@@ -76,12 +77,12 @@ class Counter extends Component {
         <div className='container'>
           <div id="quote-box" style={{borderColor: this.statetextColor}}>
             <div id='text'>{renderHTML(plainQuote)}</div>
-            <div id='author'>-{author}</div>
+            <div id='author'>{renderHTML(plainAuthor)}</div>
           </div>
         </div>
         <div id='buttons'>
           <button id='new-quote' onClick={this.fetchData} style={{backgroundColor: this.state.textColor}}>GENERATE</button>
-          <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ author} target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
+          <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ plainAuthor} target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
         </div>
       </div>
 
