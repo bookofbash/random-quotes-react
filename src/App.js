@@ -64,11 +64,9 @@ class Counter extends Component {
             <div id='author'>-{author}</div>
           </div>
         </div>
-        <div className='container'>
-          <div id='buttons'>
-            <button id='new-quote' onClick={this.fetchData}>GENERATE</button>
-           <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ author}><i className="fab fa-twitter-square"></i></a>
-          </div>
+        <div id='buttons'>
+          <button id='new-quote' onClick={this.fetchData}>GENERATE</button>
+          <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ author}><i className="fab fa-twitter-square"></i></a>
         </div>
       </div>
       )
@@ -81,11 +79,11 @@ class Counter extends Component {
             <div id='author'>-{author}</div>
           </div>
         </div>
-          <div id='buttons'>
-            <button id='new-quote' onClick={this.fetchData}>GENERATE</button>
-            <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ author}><i className="fab fa-twitter-square"></i></a>
-          </div>
+        <div id='buttons'>
+          <button id='new-quote' onClick={this.fetchData}>GENERATE</button>
+          <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ author}><i className="fab fa-twitter-square"></i></a>
         </div>
+      </div>
 
 
     );
