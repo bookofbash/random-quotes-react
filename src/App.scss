@@ -1,6 +1,7 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #121526;
 $secondary-color:#eee;
+$twitter-color: #38A1F3;
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -8,6 +9,14 @@ $secondary-color:#eee;
   body{
     background-color: $primary-color;
 
+  }
+
+  a {
+      text-decoration: none;
+      color: $secondary-color;
+  }
+  a:visited {
+    text-decoration: none;
   }
 #main{
     padding:10%;
@@ -49,7 +58,6 @@ $secondary-color:#eee;
     text-align: center;
     vertical-align: center;
     margin-top: 5%;
-
 }
 
 #new-quote{
@@ -63,7 +71,10 @@ $secondary-color:#eee;
     margin-top: 5%;
 
 }
-
+#new-quote:hover{
+    cursor: pointer;
+}
 .fa-twitter{
     font-size: 5vw;
+    color: $twitter-color;
 }

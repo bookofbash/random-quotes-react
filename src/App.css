@@ -5,6 +5,13 @@
 body {
   background-color: #121526; }
 
+a {
+  text-decoration: none;
+  color: #eee; }
+
+a:visited {
+  text-decoration: none; }
+
 #main {
   padding: 10%;
   background-color: #121526; }
@@ -51,7 +58,11 @@ body {
   border-radius: 10px;
   margin-top: 5%; }
 
+#new-quote:hover {
+  cursor: pointer; }
+
 .fa-twitter {
-  font-size: 5vw; }
+  font-size: 5vw;
+  color: #38A1F3; }
 
 /*# sourceMappingURL=App.css.map */
