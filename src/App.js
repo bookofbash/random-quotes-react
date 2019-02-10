@@ -81,7 +81,7 @@ class Counter extends Component {
         </div>
         <div id='buttons'>
           <button id='new-quote' onClick={this.fetchData} style={{backgroundColor: this.state.textColor}}>GENERATE</button>
-          <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ author}><i className="fab fa-twitter-square"></i></a>
+          <a id='tweet-quote'href={twitterURL+plainQuote+ '-'+ author} target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
         </div>
       </div>
 
