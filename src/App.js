@@ -53,7 +53,20 @@ class Counter extends Component {
 
     
     if (error) {
-      return <p>{error.message}</p>
+      console.log(error);
+      return (      
+        <div id='main'>
+        <div className='container'>
+          <div id="quote-box">
+            <div id='text' className='errorMessage'>OOPS!</div>
+            <div id='author'>Something went wrong. Click Again.</div>
+          </div>
+        </div>
+        <div className='container'>
+          <button id='new-quote' onClick={this.fetchData}>GENERATE</button>
+        </div>
+      </div>
+      )
     }
 
     if (isLoading) {
